@@ -122,8 +122,9 @@
         SongPlayer.next = function() {
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
+            console.log(currentSongIndex);
 
-            if (currentSongIndex > 4) {
+            if (currentSongIndex == -1) {
                 // currentBuzzObject.stop();
                 // SongPlayer.currentSong.playing = null;
                 stopSong(song);
