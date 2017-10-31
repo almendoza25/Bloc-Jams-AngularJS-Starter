@@ -124,7 +124,7 @@
             currentSongIndex++;
             console.log(currentSongIndex);
 
-            if (currentSongIndex == -1) {
+            if (currentSongIndex == currentAlbum.songs.length) {
                 // currentBuzzObject.stop();
                 // SongPlayer.currentSong.playing = null;
                 stopSong(song);
